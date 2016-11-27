@@ -1,0 +1,212 @@
+/*-----------GRID LAYOUT-----------*/
+.Grid_layout{
+	list-style:none;
+	margin-left:-40px;
+	margin-top:20px;
+	text-align:center;
+	width:auto;
+	height:auto;
+}
+.Grid_layout li{
+	display:inline-block;
+	clear:right;
+	margin-left:10px;
+	margin-bottom:20px;
+}
+/*-----------TOPIC-----------*/
+.Topic{
+		margin-left:15%;
+		padding-bottom:40px;
+		color:rgba(0,0,0, 0.54);		
+		font-weight:bold;
+	}
+/*-----------Button-----------*/
+.Comp_btn::selection{
+	-webkit-touch-callout: none !important; /* iOS Safari */
+	-webkit-user-select: none !important;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none !important;    /* Konqueror */
+	-moz-user-select: none !important;      /* Firefox */
+	-ms-user-select: none !important;       /* IE/Edge */
+	user-select: none !important;
+}
+.Comp_btn{	
+	text-transform:uppercase;
+	text-transform:uppercase;
+	background-color:#00e676;
+	padding:5px 10px 5px 10px;	
+	border-radius:5px;
+	position:relative;
+	top:-5px;
+	cursor:pointer;	
+	border:none;
+	color:white;
+	font-size: 15px;
+}
+.Comp_btn:hover{
+	background-color:#00b35c !important;	
+}
+
+/*-----------Course ITEM-----------*/
+.Course_item{
+	width: 230px;
+	height:280px;
+	background-color:white;
+	text-align:left;
+}
+.Course_item .Course_over{	
+	height:130px;
+	overflow:hidden;
+}
+
+/*----------------------*/
+.Course_item .Course_over .Course_bg{	
+	z-index:-1;
+	width:100%;
+	height:100%;			
+}
+.Course_item .Course_over:hover > .Course_bg{	
+	transition:0.5s;
+	transform:scale(1.1);
+}
+/*----------------------*/
+.Course_item .Course_over .Course_overview{
+	position:absolute;
+	display:none;
+	top:0px;
+	width:230px;
+	height:130px;
+	color:white;
+	font-size:14px;	
+}
+.Course_item .Course_over .Course_overview .Lecture_count{
+	position:absolute;
+	top:60px;
+	margin-left:10px;
+}
+.Course_item .Course_over .Course_overview .Course_student{
+	position:absolute;
+	top:80px;
+	margin-left:10px;
+}
+.Course_item .Course_over .Course_overview .Teacher_portrait{
+	position:absolute;
+	margin:10px;
+	border-radius:100%;
+	border: 2px solid lightgreen;
+	width:48px;
+	height:48px;
+}
+.Course_item:hover .Course_over .Course_overview{
+	display:inline-block;
+	background-color:rgba(0,0,0,0.5);
+}
+/*----------------------*/
+.Course_item .Course_intro{	
+	height:50px;
+	padding:0px 10px 10px 10px;
+	font-size:14px;
+	margin-bottom:0px;
+}
+.Course_item .Course_intro .Course_title{
+	font-size:16px;
+	font-family:Roboto-medium;
+	margin-top:5px;	
+	color:rgba(0,0,0,0.72);	
+}
+.Course_item .Course_intro .Course_overview{
+	font-size: 14px;	
+	margin-bottom:0px;
+}
+
+/*----------------------*/
+.Course_item .Course_more_info{
+	margin-top:10px;
+	padding:0px 10px 0px 10px;
+}
+.Course_price{
+	font-weight:bold;
+	display:inline-block;
+	margin-top:10px;
+}
+
+.Course_item .Wishlist_icon{		
+	float:right;
+	clear:left;
+	background-image:url('../resources/images/icons/ic_wishlist.png');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;		
+	margin:0px;	
+	margin-top:10px;
+	width:24px;
+	height:24px;				
+}
+.Course_item .Wishlist_icon:hover{
+	background-image:url('../resources/images/icons/ic_wishlist_selected.png');
+}
+.Rating{				
+	display:inline-block;
+	margin-right:10px;
+	margin-bottom:0px;
+	padding:0px;
+	width:98px;
+	height:20px;	
+	background-color:lightgray;
+}
+.Rating img{
+	position:absolute;
+	margin-top:-1px;
+	margin-left:-1px;
+	width:100px;
+	height:20px;	
+}
+.Rating_bg{
+	position:absolute;
+	width:30px;/*change it to modify rating value*/
+	height:18px;
+	background-color:#ff925c;
+	margin-top:1px;
+	margin-left:0px;
+	border-bottom:solid 2px #00e676
+}
+
+@media all and (max-width: 480px){ 
+	.Course_item{
+		padding:10px;
+		padding-bottom:0px;
+		width: 80%;		
+		height:auto;
+		overflow:hidden;
+	}
+	.Course_item .Course_over{	
+		height:auto;
+		display:inline-block;
+		overflow:hidden;
+		padding:0px;
+	}
+
+	/*----------------------*/
+	.Course_item .Course_over .Course_bg{	
+		display:none;
+	}	
+	/*----------------------*/
+	.Course_item .Course_over .Course_overview{
+		display:none !important;
+	}	
+	/*----------------------*/
+	.Course_item .Course_intro{	
+		padding:0px;
+		display:inline-block;		
+	}
+	.Course_item .Course_intro .Course_title{
+		font-size:16px;
+		margin-top:0px;
+	}
+	.Course_item .Course_intro .Course_overview{
+		font-size: 14px;	
+		margin-bottom:0px;
+	}
+	.Course_item .Course_more_info{
+		padding:0px;
+	}
+}

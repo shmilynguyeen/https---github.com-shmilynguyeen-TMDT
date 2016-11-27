@@ -1,0 +1,145 @@
+.Comp_btn{
+	background-color:#00cc69;
+}
+.Logo_container #name strong{
+	color:#00b35c;
+}
+
+body{
+	background:url(../resources/images/teams/about.png) repeat-y center top;
+	background-size:cover;
+	overflow-x:hidden;
+}
+body *{
+	font-family:helvetica-neue-regular;
+}
+.avatar {
+margin : 20px;
+}
+#about_team{
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.Section_title{
+	border-radius: 100%;
+	background-color:#1F7F4F;
+	width: 200px;
+	height: 200px;
+}
+.Section_title p{
+	font-family:VNF-Intro-Inline;
+	font-size:30px;
+	font-style:italic;
+	padding:20px;
+	color:white;
+	transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	vertical-align:middle;
+}
+.Section_list{
+	list-style:none;
+	padding-left:0;
+	background:url(../resources/images/v-dot-line.png) repeat-y center top;
+	background-size: 10px;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+#member_list{
+	padding-top:70px;
+}
+#member_list .Member{
+	display:list-item;
+	margin-left:-250px;
+	margin-bottom:70px;
+}
+#member_list .Member:nth-child(2){
+	margin-left:250px;
+}
+.Section_list li div{
+	display:inline-block;
+	text-align:right;
+	max-width:250px;
+}
+#member_list .Member:nth-child(2) div{
+	text-align:left;
+}
+#member_list .Member .Avatar{
+	max-width:100px;
+	max-height:100px;
+	position:absolute;
+	margin-top:-50px;
+	margin-left: -100px;
+}
+#member_list .Member:nth-child(2) .Avatar{
+	margin-left: 200px;
+}
+#member_list .Member .Avatar img{
+	max-width:100%;
+}
+#member_list .Member .Name{
+	background:url(../resources/images/h-dot-line.png) repeat-x bottom center;
+	background-size: 12px 5px;
+	padding-bottom:10px;
+	margin:0;
+	display:inline-block;
+	color:#1F7F4F;
+	font-size: 22px;
+}
+#member_list .Member .Student_code{
+	margin:0;
+	color:black;
+	font-size: 18px;
+	font-style:italic;
+}
+
+/*Goal section*/
+.Section#goal{
+	text-align:center;
+}
+.Section#goal .Section_title{
+	background-color:#BF313F;
+}
+.Section#goal .Section_title p{
+	position:absolute;
+	left:1%;
+	left:1%;
+	top:15%;
+	bottom:15%;
+}
+.Section#goal .Section_list li{
+	margin-left:350px;
+	padding : 20px;
+}
+.Section#goal .Section_list li div{
+	max-width:250px;
+	text-align:left;
+}
+.Section#goal .Section_list li div p{
+	color:#BF313F;
+	font-size: 17px;
+}
+.Section#goal .Section_list li div::before{
+	position:relative;
+	top:45px;
+	left:-40px;
+	content:'';
+	width: 35px;
+	height:30px;
+	display:inline-block;
+	background:url(../resources/images/h-dot-line.png) repeat-x center center;
+	background-size: 12px 5px;
+}
+.Section#goal .Section_list li:nth-child(2){
+	margin-left:-350px;
+}
+.Section#goal .Section_list li:nth-child(2) div {
+	text-align:right;
+}
+.Section#goal .Section_list li:nth-child(2) div::before{
+	left: 40px;
+}
+#foot_container{
+	margin-top:100px;
+}

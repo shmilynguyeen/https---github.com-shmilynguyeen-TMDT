@@ -1,0 +1,16 @@
+@font-face{
+	font-family:Roboto-medium;
+	src:url(../resources/fonts/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family:helvetica-neue-regular;
+	src:url(../resources/fonts/helvetica-neue-regular.ttf);
+}
+@font-face{
+	font-family:shelia-vnf-regular;
+	src:url(../resources/fonts/shelia-vnf-regular.ttf);
+}
+@font-face{
+	font-family:vnf-lanvanderia-regular;
+	src:url(../resources/fonts/vnf-lanvanderia-regular.ttf);
+}

@@ -1,0 +1,227 @@
+body{
+	margin:0;
+}
+#head_container{	
+	width:100%;
+	height: 200px;
+}
+body a{
+	text-decoration:none;
+}
+/*----------head background------------*/
+.Bg_container{	
+	position:absolute;
+	width:100%;
+	z-index:-1;
+	height: 200px;
+	overflow:hidden;
+	background:url(../resources/images/IMG_4290s-57090fa51ae2f__880.png) no-repeat center center;
+	background-size:cover;
+}	
+.Bg_container img{		
+	top:0;
+	left:0;
+	position:absolute;
+	display:block;
+	width:100%;
+	vertical-align:center;
+}
+
+/*----------------------*/
+/*Layout trang dài gồm 3 phần chính là head_container, body_container, foot_container
+	head: thanh điều hướng.
+	footer: thông tin chi tiết, địa chỉ, đơn vị liên kết
+*/
+.Logo_container {
+	position:absolute;
+	float:left;
+	clear:right;
+	margin:30px;
+	margin-top:10px;		
+}
+.Logo_container > *{
+	display:inline-block;
+}
+.Logo_container #name{
+	position:relative;
+	font-family:Roboto-medium;
+	font-size:40px;
+	margin-left:5px;		
+	top:-5px;
+	color: rgba(0,0,0,0.72);
+	
+}
+.Logo_container #name strong{
+	color: #00e676;
+	font-size:60px;
+}
+/*fixed toolbar*/
+.Toolbar_fixed{
+	padding-bottom:10px;
+	width:100%;
+	position:fixed;
+	z-index:1000;
+	background-color:white;
+	border-top:3px solid #00e676;
+	-webkit-animation: slideDown 1.5s cubic-bezier(.39, 0, .38, 1) 0s;
+	-moz-animation: slideDown 1.5s cubic-bezier(.39, 0, .38, 1) 0s;
+	-o-animation: slideDown 1.5s cubic-bezier(.39, 0, .38, 1) 0s;
+}
+.Toolbar_fixed .Menu_container{
+	margin-top:25px;
+}
+.Toolbar_fixed .Menu_container .Home_menu .Menu_item a{
+	color:rgba(0,0,0,0.82);
+}
+
+.Toolbar_fixed .Logo_container img{
+	width:24px;
+	margin-right:-5px;
+}
+.Toolbar_fixed .Logo_container #name{
+	font-size:20px;
+}
+.Toolbar_fixed .Logo_container #name strong{
+	color: #00e676;
+	font-size:30px;
+}
+@-webkit-keyframes slideDown{
+	0%{
+		opacity:0.9;
+		transform:translateY(-100px);		
+	}
+	100%{
+		transform:translateY(0px);		
+		opacity:1;
+	}
+}	
+@-moz-keyframes slideDown{
+	0%{
+		opacity:0.9;
+		transform:translateY(-100px);		
+	}
+	100%{
+		transform:translateY(0px);		
+		opacity:1;
+	}
+}	
+@-o-keyframes slideDown{
+	0%{
+		opacity:0.9;
+		transform:translateY(-100px);		
+	}
+	100%{
+		transform:translateY(0px);		
+		opacity:1;
+	}
+}
+
+/*footer*/
+#foot_container{	
+	padding-top:50px;
+	width:100%;
+	height:auto;
+}
+/*----------------------*/
+#foot_container #promotion #newsletter{
+	background-image:url('../resources/images/icons/ic_envelop_border.png');
+	background-position:center;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	width:auto;
+	height: auto;
+	margin-left:10%;
+	display:inline-block;
+	padding:40px;
+	padding-top: 20px;
+	padding-bottom:0px;
+	margin-bottom:40px;
+	background-color:white;
+}
+#foot_container #promotion #newsletter h4{
+	color:#60bad3;		
+	text-transform:uppercase;
+}
+#foot_container #promotion #newsletter strong{
+	color:rgba(0,0,0,0.32);
+	margin-right:10px;
+}
+#foot_container #promotion #newsletter span, #foot_container #promotion #newsletter input{
+	font-size: 20px;
+	font-family:vnf-lanvanderia-regular;
+}
+#foot_container #promotion #newsletter img{
+	position:absolute;
+	margin-top:-50px;
+	margin-left:320px;
+}
+#foot_container #promotion #newsletter form{
+	margin-top:20px;
+}
+#foot_container #promotion #newsletter form *{		
+	margin-bottom:20px;
+}
+#foot_container #promotion #newsletter form input{
+	padding:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:300px;		
+	border:dashed 2px lightgray;
+}	
+#foot_container #promotion #newsletter form button{
+	float:right;
+	margin-right: 0px;
+	background-color:#c4403d;
+}	
+
+/*----------------------*/
+#foot_container #promotion  #ad_img{
+	position:absolute;
+	float:right;
+	right:10%;
+	margin-top:-30px;
+	z-index:-1;
+}
+/*----------------------*/
+#foot_container #about{
+	margin:0px;
+	padding:20px;
+	padding-bottom:0px;
+	background-color:#4c4c4c;
+	color:white;
+	font-family:helvetica-neue-regular;
+	text-align:center;		
+}
+#foot_container #about div{
+	vertical-align:middle;
+	display:inline-block;
+	width: 48%;
+	text-align:left;
+}
+#foot_container #about div#column_1 ul li{
+	margin-bottom:20px;		
+}
+#foot_container #about h3{		
+	margin:0px;
+	text-transform:uppercase;
+	font-size: 18px;		
+}
+#foot_container #about div#column_2 #companies {
+	width:auto;
+}
+#foot_container #about div#column_2 #companies ul li{
+	display:inline-block;
+	margin-right:40px;
+}
+#foot_container #about div#column_2 #external_link{
+	width:auto;
+	
+}
+#foot_container #about div#column_2 #external_link ul {
+	list-style:none;
+	width:100%;
+}
+#foot_container #about div#column_2 #external_link li{
+	display:inline-block;
+	margin-right:30px;
+}

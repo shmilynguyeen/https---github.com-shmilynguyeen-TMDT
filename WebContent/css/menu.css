@@ -1,0 +1,172 @@
+body{
+background-color : #ffffff ;
+
+
+}
+.Menu_bar { 
+
+height : 60px ; 
+width : 1380px ;
+
+margin-left : -20px;
+margin-top : -20px;
+
+}
+.Menu_bar ul { 
+list-style-type : none ;
+}
+
+.Menu_bar li { 
+float : left;
+}
+.Menu_browse { 
+position:relative;
+top : 12px;
+height : 40px; 
+width : 160px;
+background-color : #cccccc ;
+border-radius : 5px;
+margin-bottom : 10px;
+
+}
+
+.Menu_browse  ul  { 
+list-style : none ;
+display : inline-block;
+}
+
+.Search_course { 
+	position:relative;
+	top : 12px;
+	height : 40px; 
+	width : 260px;
+	background-color : #cccccc ;
+	border-radius : 5px;
+	margin-bottom : 10px;
+	margin-left : 30px;
+
+}
+
+
+.Logo { 
+float : left;
+margin-top : 20px;
+margin-left : 120px;
+height : 40px;
+width : 200px;
+display : inline-block;
+
+
+}
+.Logo div { 
+float : left;
+
+
+}
+
+.Profile { 
+
+height : 40px; 
+width : 300px; 
+float : right;
+ margin-left : 250px;
+ margin-top : 10px; 
+background-color : red;
+
+}
+
+/*-------------------  */
+
+
+.Menu_hamburger{
+	position:fixed;
+	width: 30px;
+	left: 20px;
+	top:  20px;
+	cursor:pointer;
+	margin-top : -20px;
+	margin-left : 30px;
+
+	}
+.Menu_hamburger .Menu_bar{	
+	margin-top : 10px;
+	background-color: white;	
+	width: 100%;
+	height: 4px;	
+	margin-bottom:7px;
+	transition: 0.5s ease-out;
+	border-radius: 2px;
+	  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+.Menu_hamburger .Menu_bar.Bot{
+	margin-bottom:0px;
+}
+.Menu_hamburger.Open .Menu_bar.Top{
+	transform: rotate(45deg)  translate(10px, 10px);
+	transition: 0.5s;
+}
+.Menu_hamburger.Open .Menu_bar.Bot{
+	transform: rotate(-45deg)  translate(10px, -10px);
+	transition: 0.5s;
+}
+.Menu_hamburger.Open .Menu_bar.Mid{
+	transform: translateX(400px);
+	transition: 0.25s ease-in;
+	opacity: 0;
+}
+
+.Menu_items{
+	margin-top:100px;
+	list-style:none;
+}
+.Menu_items li{
+	text-transform: uppercase;
+	font-size: 18px;
+	  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */								  
+}
+.Menu_items li a{
+	text-decoration:none;
+	font-weight: bold;
+	color:white;
+	text-shadow: 2px 5px 50px black;
+	display:inline-block;
+	width: auto;	
+}
+.Menu_items li a:after{	
+	content:'';
+	display:block;
+	position:relative;
+	height: 3px;
+	width: 0;
+	background-color:black;
+	transition: .25s ease-in;
+	margin:auto;
+}
+.Menu_items li a:hover:after{
+	width: 100%;
+	transition: .25s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
