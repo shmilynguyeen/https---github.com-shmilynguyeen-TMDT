@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style_login_admin.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+      
+    <div class="form">
+        <div class="head">
+                <img src="resources/images/icons/user.png" alt=""/>
+            </div>
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1 style="color : black">Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label style="color : #A9A9A9">
+                First Name<span class="req">*</span>
+              </label>
+              <input style="color : green" type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label style="color :#A9A9A9">
+                Last Name<span class="req">*</span>
+              </label>
+              <input style="color : green" type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label style="color :#A9A9A9">
+              Email Address<span class="req">*</span>
+            </label>
+            <input style="color : green" type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label style="color : #A9A9A9">
+              Set A Password<span class="req">*</span>
+            </label>
+            <input style="color : green" type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1  style="color : black">Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label  style="color : #A9A9A9">
+              Email Address<span class="req">*</span>
+            </label>
+            <input style="color : green" type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label style="color : #A9A9A9">
+              Password<span class="req">*</span>
+            </label>
+            <input style="color : green" type="password"required autocomplete="off"/>
+          </div>
+		   
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+		  <br>
+		  <div class="group1">
+		   <ul class="tab-group1">
+             <li class="tab1"><a class="f" href="#facebook">FaceBook</a></li>
+             <li class="tab2"><a class="g" href="#google">Google+</a></li>
+           </ul>
+		   </div>
+		  
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/login.js"></script>
+
+     <script type="application/x-javascript">
+    window.addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){
+        window.scrollTo(0,1);
+    }
+    function login(e) {
+        if (e) {
+            e.prevenDefault();
+        }
+        window.localStorage.setItem('posters_galore_login', document.getElementById('username').value);
+        window.location.href = "";
+        return false;
+    }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46201426-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    
+  </body>
+</html>
